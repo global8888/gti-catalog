@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Technology Import-Export Group (GTI) - 产品展示手册</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E40AF',
+                        secondary: '#3B82F6',
+                        dark: '#1E293B',
+                        light: '#F8FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .scrollbar-hide {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+            .scrollbar-hide::-webkit-scrollbar {
+                display: none;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+    <!-- 引入Inter字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light text-dark font-sans">
+    <!-- 导航栏 -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="#hero" class="flex items-center space-x-2">
+                    <i class="fa fa-globe text-primary text-2xl"></i>
+                    <span class="text-xl font-bold text-primary">GTI 集团</span>
+                </a>
+                
+                <!-- 桌面端导航 -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#company" class="font-medium hover:text-primary transition-colors">公司介绍</a>
+                    <a href="#defense" class="font-medium hover:text-primary transition-colors">国防装备</a>
+                    <a href="#mineral" class="font-medium hover:text-primary transition-colors">矿产开发</a>
+                    <a href="#logistics" class="font-medium hover:text-primary transition-colors">物流运输</a>
+                    <a href="#contact" class="font-medium hover:text-primary transition-colors">联系我们</a>
+                </nav>
+                
+                <!-- 移动端菜单按钮 -->
+                <button id="menuBtn" class="md:hidden text-dark hover:text-primary">
+                    <i class="fa fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 移动端导航菜单 -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-3 space-y-3">
+                <a href="#company" class="block py-2 font-medium hover:text-primary transition-colors">公司介绍</a>
+                <a href="#defense" class="block py-2 font-medium hover:text-primary transition-colors">国防装备</a>
+                <a href="#mineral" class="block py-2 font-medium hover:text-primary transition-colors">矿产开发</a>
+                <a href="#logistics" class="block py-2 font-medium hover:text-primary transition-colors">物流运输</a>
+                <a href="#contact" class="block py-2 font-medium hover:text-primary transition-colors">联系我们</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区 -->
+    <section id="hero" class="pt-32 pb-20 bg-gradient-to-b from-primary/5 to-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-primary mb-6 text-shadow">
+                Global Technology Import-Export Group
+            </h1>
+            <p class="text-[clamp(1.1rem,2vw,1.3rem)] text-gray-700 max-w-3xl mx-auto mb-10">
+                Connecting Global Technology and Regional Development
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#company" class="bg-primary hover:bg-primary/90 text-white font-medium py-3 px-8 rounded-lg transition-colors">
+                    了解公司
+                </a>
+                <a href="#defense" class="bg-white hover:bg-gray-50 text-primary border border-primary font-medium py-3 px-8 rounded-lg transition-colors">
+                    浏览产品
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公司介绍 -->
+    <section id="company" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-primary mb-8 text-center">About Us</h2>
+                <div class="prose prose-lg max-w-none">
+                    <p class="mb-4">Global Technology Import-Export Group Co., Ltd. (GTI) is headquartered in Vientiane, Laos, and upholds the mission of "Connecting Global Technology and Regional Development." It aims to become a leading platform for the integration of technology and capital in Southeast Asia.</p>
+                    <p class="mb-4">With core strategic focuses in defense equipment trade, system integration, and mineral resource development, the company leverages its accumulated industry resources and operational excellence over many years to provide government and corporate clients with comprehensive solutions ranging from hardware supply to technical service support. GTI is committed to enhancing regional business capabilities and fostering sustainable prosperity.</p>
+                    
+                    <h3 class="text-xl font-semibold text-dark mt-8 mb-4">Core Strengths</h3>
+                    <ul class="list-disc pl-6 space-y-2 mb-6">
+                        <li><strong>Profound Regional Insight:</strong> The core team possesses extensive years of experience in the Lao and Southeast Asian markets, with a deep understanding of local policies and cultural requirements.</li>
+                        <li><strong>Integrated Service Capability:</strong> Capable of providing one-stop integrated solutions from R&D and production, system integration, to logistics, transportation, and after-sales support.</li>
+                        <li><strong>Compliance and Sustainable Development:</strong> Strictly adheres to international defense trade regulations and regional laws, and is dedicated to implementing the UN Sustainable Development Goals.</li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-semibold text-dark mt-8 mb-4">Future Vision</h3>
+                    <p>GTI will continue to expand into ASEAN and global markets, solidifying its competitive edge in the fields of defense equipment, simulation technology, and mineral resource development. Through continuous technological upgrading, regional cooperation, and talent development, GTI aims to become a significant force in promoting Laos's industrial modernization and regional economic cooperation, striving to build a model technology enterprise rooted locally with a global reach.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品展示 - 国防装备 -->
+    <section id="defense" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-primary mb-4 text-center">Defense Equipment</h2>
+            <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12">Comprehensive defense solutions including weapons, armored vehicles, UAV systems and more</p>
+            
+            <!-- 产品分类标签 -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button class="defense-tab active bg-primary text-white py-2 px-6 rounded-full text-sm font-medium" data-category="all">全部产品</button>
+                <button class="defense-tab bg-white text-dark hover:bg-primary/10 py-2 px-6 rounded-full text-sm font-medium" data-category="weapons">枪械武器</button>
+                <button class="defense-tab bg-white text-dark hover:bg-primary/10 py-2 px-6 rounded-full text-sm font-medium" data-category="armored">装甲车辆</button>
+                <button class="defense-tab bg-white text-dark hover:bg-primary/10 py-2 px-6 rounded-full text-sm font-medium" data-category="missiles">导弹系统</button>
+                <button class="defense-tab bg-white text-dark hover:bg-primary/10 py-2 px-6 rounded-full text-sm font-medium" data-category="uav">无人机系统</button>
+                <button class="defense-tab bg-white text-dark hover:bg-primary/10 py-2 px-6 rounded-full text-sm font-medium" data-category="logistics">后勤装备</button>
+            </div>
+            
+            <!-- 产品网格 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 枪械武器 - NP29手枪 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="weapons">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1011/800/600" alt="9mm pistol Type NP29" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">9mm pistol Type NP29</h3>
+                        <p class="text-gray-600 mb-4">High-performance 9mm pistol with reliable operation and excellent accuracy</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Caliber:</span>
+                                <span class="font-medium">9mm</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Overall Length:</span>
+                                <span class="font-medium">218mm</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Weight (with magazine):</span>
+                                <span class="font-medium">1150g</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Service Life:</span>
+                                <span class="font-medium">>10000 rounds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 枪械武器 - CQ-A自动步枪 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="weapons">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1005/800/600" alt="CQ-A 5.56mm Automatic rifle" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">CQ-A 5.56mm Automatic rifle</h3>
+                        <p class="text-gray-600 mb-4">Reliable gas-operated assault rifle with excellent performance in various environments</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Caliber:</span>
+                                <span class="font-medium">5.56mm</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Muzzle Velocity:</span>
+                                <span class="font-medium">900m/s</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Effective Range:</span>
+                                <span class="font-medium">460m</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Magazine Capacity:</span>
+                                <span class="font-medium">30 rounds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 枪械武器 - M99狙击步枪 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="weapons">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1003/800/600" alt="12.7mm Sniper rifle Model M99" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">12.7mm Sniper rifle Model M99</h3>
+                        <p class="text-gray-600 mb-4">Powerful semi-automatic anti-materiel sniper rifle with long-range precision</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Caliber:</span>
+                                <span class="font-medium">12.7mm</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Effective Range:</span>
+                                <span class="font-medium">≥1500m</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Total Weight:</span>
+                                <span class="font-medium">≤13.5kg (including sight)</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Magazine Capacity:</span>
+                                <span class="font-medium">5 rounds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 装甲车辆 - CS/VP3防地雷车 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="armored">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1071/800/600" alt="Mine Resistant Ambush Protected Type CS/VP3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Mine Resistant Ambush Protected Type CS/VP3</h3>
+                        <p class="text-gray-600 mb-4">High-protection MRAP vehicle designed for counter-insurgency and peacekeeping missions</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Combat Weight:</span>
+                                <span class="font-medium">15t</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Crew:</span>
+                                <span class="font-medium">2+10</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Max Road Speed:</span>
+                                <span class="font-medium">100Km/h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Mine Resistant Level:</span>
+                                <span class="font-medium">16kg TNT under vehicle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 装甲车辆 - VT4主战坦克 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="armored">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1067/800/600" alt="VT4 Main Battle Tank" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">VT4 Main Battle Tank</h3>
+                        <p class="text-gray-600 mb-4">Advanced export-oriented main battle tank with powerful firepower and protection</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Main Armament:</span>
+                                <span class="font-medium">125mm smoothbore gun</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Crew:</span>
+                                <span class="font-medium">3</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Max Speed:</span>
+                                <span class="font-medium">70km/h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Protection:</span>
+                                <span class="font-medium">Composite armor + ERA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 装甲车辆 - CS/VN4装甲运兵车 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="armored">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1072/800/600" alt="Armored Personnel Carrier Type CS/VN4" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Armored Personnel Carrier Type CS/VN4</h3>
+                        <p class="text-gray-600 mb-4">6x6 wheeled armored personnel carrier with high mobility and protection</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Combat Weight:</span>
+                                <span class="font-medium">15t</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Crew:</span>
+                                <span class="font-medium">2+10</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Max Road Speed:</span>
+                                <span class="font-medium">≥100Km/h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Power Pack:</span>
+                                <span class="font-medium">275KW Engine + AT + Retarder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 导弹系统 - FN-6便携式防空导弹 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="missiles">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1025/800/600" alt="FN series Manpad Air Defence Missle" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">FN series Manpad Air Defence Missle</h3>
+                        <p class="text-gray-600 mb-4">Shoulder-fired low-altitude air defense missile with infrared homing guidance</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Guidance:</span>
+                                <span class="font-medium">Infrared homing</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Effective Range:</span>
+                                <span class="font-medium">6km</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Effective Altitude:</span>
+                                <span class="font-medium">3.5km</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Features:</span>
+                                <span class="font-medium">Omni-directional attack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 导弹系统 - 红箭-12反坦克导弹 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="missiles">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1047/800/600" alt="Red Arrow-12 Anti-Tank Missile" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Red Arrow-12 Anti-Tank Missile</h3>
+                        <p class="text-gray-600 mb-4">Third-generation fire-and-forget anti-tank missile with top-attack capability</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Caliber:</span>
+                                <span class="font-medium">130mm</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Effective Range:</span>
+                                <span class="font-medium">4km</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Penetration:</span>
+                                <span class="font-medium">1100mm RHA</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Launch Mode:</span>
+                                <span class="font-medium">Shoulder-fired</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 导弹系统 - 红旗-9防空导弹 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="missiles">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1035/800/600" alt="Red Flag-9 surface-to-air missile" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Red Flag-9 surface-to-air missile</h3>
+                        <p class="text-gray-600 mb-4">Long-range air defense missile system with anti-aircraft and anti-missile capabilities</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Export Designation:</span>
+                                <span class="font-medium">FD-2000</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Effective Range:</span>
+                                <span class="font-medium">125km</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Effective Altitude:</span>
+                                <span class="font-medium">27km</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Guidance:</span>
+                                <span class="font-medium">Active radar homing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 无人机系统 - 翼龙系列无人机 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="uav">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1059/800/600" alt="Wing Loong series UAV" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Wing Loong series UAV</h3>
+                        <p class="text-gray-600 mb-4">Medium-Altitude Long-Endurance reconnaissance/strike integrated UAV system</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Max Flight Speed:</span>
+                                <span class="font-medium">280km/h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Endurance:</span>
+                                <span class="font-medium">>20 hours</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Range:</span>
+                                <span class="font-medium">4,000km</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Weapons:</span>
+                                <span class="font-medium">Missiles, guided rockets, bombs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 无人机系统 - 天弩巡飞弹 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="uav">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1063/800/600" alt="Sky Sword Cruise Missile" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Sky Sword Cruise Missile</h3>
+                        <p class="text-gray-600 mb-4">Stealth precision-guided weapon with man-in-the-loop capabilities</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Max Take-off Weight:</span>
+                                <span class="font-medium">12kg</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Mission Radius:</span>
+                                <span class="font-medium">50km</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Strike Accuracy:</span>
+                                <span class="font-medium">1 meter</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Features:</span>
+                                <span class="font-medium">Low radar signature, anti-jamming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 无人机系统 - 天眼侦察无人机 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="uav">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1069/800/600" alt="Sky Eye reconnaissance drone" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Sky Eye reconnaissance drone</h3>
+                        <p class="text-gray-600 mb-4">Long-endurance reconnaissance UAV with man-in-the-loop control</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Max Take-off Weight:</span>
+                                <span class="font-medium">4.4kg</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Flight Speed:</span>
+                                <span class="font-medium">80-105km/h</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Payload:</span>
+                                <span class="font-medium">3.5kg</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Features:</span>
+                                <span class="font-medium">Anti-jamming, encrypted data link</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 后勤装备 - 伪装产品 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="logistics">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1080/800/600" alt="SNC Camouflage Products" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">SNC Camouflage Products</h3>
+                        <p class="text-gray-600 mb-4">Multiband spectral camouflage solutions for military equipment and personnel</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Product Range:</span>
+                                <span class="font-medium">Paint, nets, cloths, shielding materials</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Camouflage Bands:</span>
+                                <span class="font-medium">Visible, near-infrared, thermal</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Application:</span>
+                                <span class="font-medium">Vehicles, aircraft, facilities</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Features:</span>
+                                <span class="font-medium">Lightweight, durable, easy to deploy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 后勤装备 - 防弹装备 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="logistics">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1066/800/600" alt="Body Armor and Helmets" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Ballistic Protection Equipment</h3>
+                        <p class="text-gray-600 mb-4">High-performance body armor, helmets and ballistic inserts for military and law enforcement</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Body Armor Level:</span>
+                                <span class="font-medium">NIJ Level IV</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Helmet Standards:</span>
+                                <span class="font-medium">GA293-2012, GJB5115-2004</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Materials:</span>
+                                <span class="font-medium">PE UD cloth, alumina ceramic</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Protection:</span>
+                                <span class="font-medium">7.62x39mm, 5.56x45mm rounds</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 后勤装备 - 移动医疗系统 -->
+                <div class="defense-card card-hover bg-white rounded-xl shadow-md overflow-hidden" data-category="logistics">
+                    <div class="h-64 bg-gray-200 flex items-center justify-center">
+                        <img src="https://picsum.photos/id/1082/800/600" alt="Mobile Hospital System" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Mobile Hospital System</h3>
+                        <p class="text-gray-600 mb-4">Field-deployable medical facilities for emergency treatment in combat zones</p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Deployment Time:</span>
+                                <span class="font-medium">Rapid setup</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Capacity:</span>
+                                <span class="font-medium">Multiple treatment stations</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Equipment:</span>
+                                <span class="font-medium">Medical devices, supplies storage</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-500">Features:</span>
+                                <span class="font-medium">Climate control, mobile, rugged</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 矿产开发 -->
+    <section id="mineral" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-primary mb-4 text-center">Mineral Resource Development</h2>
+            <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12">Sustainable development of mineral resources with environmental protection and community cooperation</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h3 class="text-2xl font-semibold text-dark mb-6">Our Mineral Development Philosophy</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-2 rounded-full text-primary mt-1">
+                                <i class="fa fa-leaf"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Environmentally Friendly Exploration</h4>
+                                <p class="text-gray-600">Conducting compliant exploration and development of minerals such as gold, copper, and rare earth elements with minimal environmental impact.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-2 rounded-full text-primary mt-1">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Community Development</h4>
+                                <p class="text-gray-600">Implementing cooperative projects that promote local community development and capacity building.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-2 rounded-full text-primary mt-1">
+                                <i class="fa fa-cogs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Professional Platform</h4>
+                                <p class="text-gray-600">Establishing reliable channels for professional resources and strengthening core regional mineral development capabilities.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-2 rounded-full text-primary mt-1">
+                                <i class="fa fa-balance-scale"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg mb-1">Sustainable Practices</h4>
+                                <p class="text-gray-600">Committed to maximizing the value of mineral resources while adhering to international environmental and social standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2">
+                    <div class="rounded-xl overflow-hidden shadow-lg">
+                        <img src="https://picsum.photos/id/1036/800/600" alt="Mineral Resource Development" class="w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 物流运输 -->
+    <section id="logistics" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-primary mb-4 text-center">Specialized Defense Logistics</h2>
+            <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12">Efficient, compliant and secure transportation solutions for high-risk defense materials</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-xl shadow-md p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6">
+                        <i class="fa fa-truck"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Compliant Logistics System</h3>
+                    <p class="text-gray-600 mb-4">Building an efficient, compliant cargo transportation system with global capability to handle high-risk defense material shipments.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Global transportation network</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Compliance with international regulations</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Specialized handling procedures</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Real-time tracking and monitoring</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8 card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Security Assurance</h3>
+                    <p class="text-gray-600 mb-4">Ensuring secure and direct delivery of equipment to clients with comprehensive security measures throughout the transportation process.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Secure transportation routes</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Armed escort services</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Secure storage facilities</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Global support network</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://picsum.photos/id/1076/1200/400" alt="Logistics and Transportation" class="w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-primary mb-4 text-center">Contact Us</h2>
+            <p class="text-gray-700 text-center max-w-2xl mx-auto mb-12">For inquiries about our products and services, please contact us through the following channels</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gray-50 rounded-xl p-8 text-center card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6 mx-auto">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Address</h3>
+                    <p class="text-gray-600">Nongpeupeu Village, Sisattanak District, Vientiane, Lao People's Democratic Republic</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 text-center card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6 mx-auto">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Phone</h3>
+                    <p class="text-gray-600 mb-2">+856 20 9247 903</p>
+                    <p class="text-gray-500 text-sm">Monday - Friday: 9:00 - 17:00 (GMT+7)</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 text-center card-hover">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center text-primary text-2xl mb-6 mx-auto">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-dark mb-4">Email</h3>
+                    <p class="text-gray-600 mb-2">globaltechnologygroup@yahoo.com</p>
+                    <p class="text-gray-500 text-sm">We respond within 24 business hours</p>
+                </div>
+            </div>
+            
+            <!-- 联系表单 -->
+            <div class="max-w-3xl mx-auto mt-16 bg-gray-50 rounded-xl p-8 shadow-md">
+                <h3 class="text-2xl font-bold text-dark mb-6 text-center">Send Us a Message</h3>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 mb-2">Your Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="company" class="block text-gray-700 mb-2">Company/Organization</label>
+                        <input type="text" id="company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="Company Name">
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+                        <select id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors">
+                            <option value="">Select a subject</option>
+                            <option value="defense">Defense Equipment Inquiry</option>
+                            <option value="mineral">Mineral Development Cooperation</option>
+                            <option value="logistics">Logistics Services</option>
+                            <option value="other">Other Inquiries</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 mb-2">Message</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="Please provide details about your inquiry..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-lg transition-colors">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa fa-globe text-primary text-2xl"></i>
+                        <span class="text-xl font-bold">GTI 集团</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Connecting Global Technology and Regional Development</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#company" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#defense" class="text-gray-400 hover:text-white transition-colors">Defense Equipment</a></li>
+                        <li><a href="#mineral" class="text-gray-400 hover:text-white transition-colors">Mineral Development</a></li>
+                        <li><a href="#
